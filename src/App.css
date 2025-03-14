@@ -1,0 +1,166 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width:100vw;
+  display:flex;
+  justify-content:center;
+  height:100vh;
+  align-items:center;
+  /* background-color: #85FFBD; */
+  background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+  
+}
+
+.App{
+  width:50vw;
+  border:2px solid black;
+  padding:10px;
+  border-radius: 22px;
+  background: #e0e0e0;
+  box-shadow:  28px 28px 26px #b3b3b3,-28px -28px 26px #ffffff;
+  background-color: #2C7865;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color:#D9EDBF;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+  gap:5px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline:none;
+  font-weight:600;
+}
+
+input[type="checkbox"] {
+  width:20px;
+}
+
+.check-text{
+  font-size:20px;
+  display:flex;
+  column-gap:10px;
+  color:#D9EDBF;
+}
+
+button {
+  padding: 4px 8px;
+  background-color: #90D26D;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight:600;
+}
+
+.add{
+  padding:8px 8px;
+  font-size:16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-bottom:5px;
+  border-radius:10px;
+  background:#FF9800;
+}
+
+button.delete {
+  background-color: #dc3545;
+}
+
+/* Add this at the end of your existing CSS */
+
+@media (min-width: 315px) and (max-width: 780px) {
+  .App {
+    width: 80vw;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  form{
+    flex-direction:column;
+  }
+  input[type="text"] {
+    font-size: 16px;
+  }
+  .add{
+    align-self:center;
+  }
+  button {
+    padding: 6px 10px;
+    font-size: 16px;
+    width:max-content;
+  }
+
+  li {
+    padding: 6px;
+    margin-bottom: 4px;
+  }
+
+  .check-text {
+    font-size: 18px;
+  }
+}
+
+/* Add this at the end of your existing CSS */
+
+@media (min-width: 781px) and (max-width: 1200px) {
+  .App {
+    width: 70vw;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  input[type="text"] {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 18px;
+  }
+
+  li {
+    padding: 8px;
+    margin-bottom: 6px;
+  }
+
+  .check-text {
+    font-size: 20px;
+  }
+}
